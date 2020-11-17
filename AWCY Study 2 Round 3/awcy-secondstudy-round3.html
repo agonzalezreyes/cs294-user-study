@@ -1,0 +1,47 @@
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<crowd-form answer-format="flatten-objects">
+
+<h3>User Study: Andy</h3>
+<p>Stanford University is developing an virtual assistant, called Andy. We'd like to know how interested you would be in using Andy.</p>	
+
+<div>
+    <h3> Instructions </h3>
+    <p>Imagine you have just received a new virtual assistant, called Andy, developed by Stanford University. The assistant does all the most important functions that Alexa does. You turn it on. Fill out what you expect your first few examples of conversations do you expect.
+    Write down very different sentences of you would say or ask, and how you think the assistant should answer:</p>
+    <p>Andy: Hello, how can I help you?</p>
+    <p>User (you): RESPONSE</p>
+    <p>Etc...</p>
+</div>
+
+<div>
+    <h3> First conversation: Ask Andy for some information and/or to perform a command/skill. 
+    You start the conversation. How would you imagine the conversation to go? </h3>
+    <p>You:</p>
+    <crowd-text-area name="1.user.turn.1" rows="1" placeholder="Andy, ..." required></crowd-text-area>
+    <p>Andy:</p>
+    <crowd-text-area name="1.andy.turn.2" rows="1" placeholder=" " required></crowd-text-area>
+    <p>You:</p>
+    <crowd-text-area name="1.user.turn.3" rows="1" placeholder=" " required></crowd-text-area>
+    <p>Andy:</p>
+    <crowd-text-area name="1.andy.turn.4" rows="1" placeholder=" " required></crowd-text-area>
+    <p>You:</p>
+    <crowd-text-area name="1.user.turn.5" rows="1" placeholder=" " required></crowd-text-area>
+</div>
+
+<div>
+    <h3> Second conversation: Unlike Alexa, Andy actually can carry out a dialogue and not just respond to commands. 
+    How would you imagine the conversation to go if you were talking to Andy? </h3>
+    <p>You:</p>
+    <crowd-text-area name="2.user.turn.1" rows="1" placeholder="Andy, ..." required></crowd-text-area>
+    <p>Andy:</p>
+    <crowd-text-area name="2.andy.turn.2" rows="1" placeholder=" " required></crowd-text-area>
+    <p>You:</p>
+    <crowd-text-area name="2.user.turn.3" rows="1" placeholder=" " required></crowd-text-area>
+    <p>Andy:</p>
+    <crowd-text-area name="2.andy.turn.4" rows="1" placeholder=" " required></crowd-text-area>
+    <p>You:</p>
+    <crowd-text-area name="2.user.turn.5" rows="1" placeholder=" " required></crowd-text-area>
+</div>
+
+</crowd-form>

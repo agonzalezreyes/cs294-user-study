@@ -1,0 +1,104 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+
+<h3>User Study: Andy</h3>
+<p>Stanford University is developing an open source privacy-protecting virtual assistant, called Andy. We'd like to know how interested you would be in using Andy.</p>	
+
+<div> 
+    <p>How concerned are you about privacy of smart assistants such as Alexa or Google Assistant? 
+    On a scale of 1-4, where:</p>
+    <ol>
+        <li>Not at all concerned</li>
+        <li>A little concerned</li>
+        <li>Concerned, but that’s the way it is. I will use it if it is useful.</li>
+        <li>I’m so concerned about privacy that I will not use it even if I find it useful.</li>
+    </ol>
+    <crowd-slider name="privacy.concern" min="1" max="4" step="1" pin="true" required></crowd-slider>
+</div>
+
+  <!--<crowd-instructions link-text="View instructions" link-type="button">-->
+  <!--  <short-summary>-->
+  <!--   <h3> Instructions </h3>-->
+  <!--  <p>Imagine that you are chatting with a Yelp chat bot designed to help you with restaurant reservations and questions. -->
+  <!--  Write down 5 very different sentences you would say after the agent greets you:</p>-->
+  <!--  <p>Andy: Hello, how can I help you?</p>-->
+  <!--  <p>User (you): RESPONSE</p>-->
+  <!--  <p>...</p>-->
+  <!--  </short-summary>-->
+
+    <!--<detailed-instructions>-->
+    <!--  <h3>Provide more detailed instructions here</h3>-->
+    <!--  <p>Include additional information</p>-->
+    <!--</detailed-instructions>-->
+
+    <!--<positive-example>-->
+    <!--  <p>Provide an example of a good answer here</p>-->
+    <!--  <p>Explain why it's a good answer</p>-->
+    <!--</positive-example>-->
+
+    <!--<negative-example>-->
+    <!--  <p>Provide an example of a bad answer here</p>-->
+    <!--  <p>Explain why it's a bad answer</p>-->
+    <!--</negative-example>-->
+  <!--</crowd-instructions>-->
+<div>
+    <h3> Instructions </h3>
+    <p>Imagine you have just received a new open-source privacy-protecting assistant, called Andy, developed by Stanford University that is designed to protect your privacy. The assistant does all the most important functions that Alexa does. You turn it on. Fill out what you expect your first few examples of conversations do you expect.  
+    Write down very different sentences of you would say or ask, and how you think the assitant should answer:</p>
+    <p>Andy: Hello, how can I help you?</p>
+    <p>User (you): RESPONSE</p>
+    <p>Etc...</p>
+</div>
+
+<div>
+    <h3> 1st conversation: Meeting Andy. Andy starts the conversation. </h3>
+    <p>Andy: I am an open-source assistant from Stanford University that protects your privacy. How can I help you?</p>
+    <p>You:</p>
+    <crowd-text-area name="1.user.turn.1" rows="1" placeholder=" " required></crowd-text-area>
+    <p>Andy:</p>
+    <crowd-text-area name="1.andy.turn.2" rows="1" placeholder=" " required></crowd-text-area>
+    <p>You:</p>
+    <crowd-text-area name="1.user.turn.3" rows="1" placeholder=" " required></crowd-text-area>
+    <p>Andy:</p>
+    <crowd-text-area name="1.andy.turn.4" rows="1" placeholder=" " required></crowd-text-area>
+    <p>You:</p>
+    <crowd-text-area name="1.user.turn.5" rows="1" placeholder=" " required></crowd-text-area>
+</div>
+
+
+<div>
+    <h3> 2nd conversation: Asking Andy for some information. You start the conversation. </h3>
+    <p>You:</p>
+    <crowd-text-area name="2.user.turn.1" rows="1" placeholder="Andy, ..." required></crowd-text-area>
+    <p>Andy:</p>
+    <crowd-text-area name="2.andy.turn.2" rows="1" placeholder=" " required></crowd-text-area>
+    <p>You:</p>
+    <crowd-text-area name="2.user.turn.3" rows="1" placeholder=" " required></crowd-text-area>
+    <p>Andy:</p>
+    <crowd-text-area name="2.andy.turn.4" rows="1" placeholder=" " required></crowd-text-area>
+    <p>You:</p>
+    <crowd-text-area name="2.user.turn.5" rows="1" placeholder=" " required></crowd-text-area>
+</div>
+
+<div>
+    <h3> 3rd conversation: Unlike Alexa, Andy actually can carry out a dialogue and not just respond to commands. 
+    How would you imagine the conversation to go if you were talking to Andy? </h3>
+    <p>You:</p>
+    <crowd-text-area name="3.user.turn.1" rows="1" placeholder="Andy, ..." required></crowd-text-area>
+    <p>Andy:</p>
+    <crowd-text-area name="3.andy.turn.2" rows="1" placeholder=" " required></crowd-text-area>
+    <p>You:</p>
+    <crowd-text-area name="3.user.turn.3" rows="1" placeholder=" " required></crowd-text-area>
+    <p>Andy:</p>
+    <crowd-text-area name="3.andy.turn.4" rows="1" placeholder=" " required></crowd-text-area>
+    <p>You:</p>
+    <crowd-text-area name="3.user.turn.5" rows="1" placeholder=" " required></crowd-text-area>
+</div>
+
+</crowd-form>
